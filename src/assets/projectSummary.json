@@ -1,0 +1,24 @@
+{
+    "ProjectSummaryList": [
+        {
+            "key": "CodeFiles",
+            "Value": 1
+        },
+        {
+            "key": "UserStories",
+            "Value": 1
+        },
+        {
+            "key": "Tasks",
+            "Value": 1
+        },
+        {
+            "key": "TestCases",
+            "Value": 1
+        },
+        {
+            "key": "Bugs",
+            "Value": 1
+        }
+    ]
+}

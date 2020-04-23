@@ -1,0 +1,79 @@
+.one
+{
+  position: absolute;
+  align-items: center;
+  margin-left: 7.5%; 
+  margin-right: 9%;
+  top: 17%;
+  margin-bottom: 100px;
+  
+}
+
+mat-divider{
+  border-color: rgba(12, 8, 206, 0.575);
+}
+
+p{
+  font-size: 17px;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardList > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.host {
+  display: block;
+  padding: 32px 32px 32px;
+  border-radius: 8px;
+}
+.example-card {
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 310px;
+  
+}
+
+.example-header-image {
+  background-size: cover;
+}
+img{
+  min-height: 27px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  padding-right: 16px;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.example-container > * {
+  width: 75%;
+  
+}
+.c{
+  margin-left: 10px;
+}
+
+
+#main{
+  position:absolute;
+  padding:10px;
+}
+#main > div{
+  float:right;
+  margin:10px;
+}

@@ -1,0 +1,76 @@
+<div class="full">
+    <div *ngIf="breakpoint>=968" (window:resize)="onResize($event)">
+        <mat-grid-list cols="4" rowHeight=" 2:1">
+            <mat-grid-tile *ngFor="let cardDetail of config; let i = index; let j = index;">
+                <mat-card *ngIf="j < 4">
+                    <mat-card-content>
+                        <img src="./assets/{{j+1}}.png"> &nbsp; &nbsp;{{cardDetail.Key}} &nbsp;&nbsp;
+                        <br> &nbsp;&nbsp;
+                        <div *ngIf="cardDetail.Options[0]">
+                            <div class="div-options" style="text-align: center" *ngIf="cardDetail.Options[0].Value== 1">
+                                <b>{{cardDetail.Options[0].key}}</b>
+                            </div>
+                        </div>
+                        <div *ngIf="cardDetail.Options[1]">
+                            <div class="div-options" style="text-align: center" *ngIf="cardDetail.Options[1].Value== 1">
+                                <b>{{cardDetail.Options[1].key}}</b>
+                            </div>
+                        </div>
+                        <div *ngIf="cardDetail.Options[2]">
+                            <div class="div-options" style="text-align: center" *ngIf="cardDetail.Options[2].Value== 1">
+                                <b>{{cardDetail.Options[2].key}}</b>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div *ngIf="breakpoint<968" (window:resize)="onResize($event)"></div>
+
+    
+    <div class="user-table">
+        <p>TEST CASE</p><br>
+        <mat-form-field appearance="outline" class="search-class">
+            <mat-label>Search</mat-label>
+            <mat-icon matPrefix>search</mat-icon>
+            <input matInput matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+        </mat-form-field>
+        <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="TestCaseSource">
+                <th mat-header-cell *matHeaderCellDef>Test Case Source</th>
+                <td mat-cell *matCellDef="let element">{{element.TestCaseSource}} </td>
+            </ng-container>
+            <ng-container matColumnDef="TestCaseID">
+                <th mat-header-cell *matHeaderCellDef>Test Case ID</th>
+                <td mat-cell *matCellDef="let element"> {{element.TestCaseID}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Title">
+                <th mat-header-cell *matHeaderCellDef>Title</th>
+                <td mat-cell *matCellDef="let element"> {{element.Title}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Description">
+                <th mat-header-cell *matHeaderCellDef>Description</th>
+                <td mat-cell *matCellDef="let element"> {{element.Description}} </td>
+            </ng-container>
+            <ng-container matColumnDef="mappeduserstories">
+                <th mat-header-cell *matHeaderCellDef>Mapped User Stories</th>
+                <td mat-cell *matCellDef="let element"> 1 </td>
+            </ng-container>
+            <ng-container matColumnDef="mappedtasks">
+                <th mat-header-cell *matHeaderCellDef>Mapped Tasks</th>
+                <td mat-cell *matCellDef="let element"> 1 </td>
+            </ng-container>
+            <ng-container matColumnDef="mappedcode">
+                <th mat-header-cell *matHeaderCellDef>Mapped Code</th>
+                <td mat-cell *matCellDef="let element"> 1 </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+
+</div>
