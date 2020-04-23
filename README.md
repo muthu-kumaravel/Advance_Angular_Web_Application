@@ -1,10 +1,10 @@
 # Advance_Angular_Web_Application
-Advance Angular Web Application, is an example on how to use all major functionalities, API and all features of Angular. 
+Advance Angular Web Application, is an example of how to use all major functionalities, API and all features of Angular.
 
 ### Features used in the project
-This project consists all latest modals and covers the usage of most of the materials components fields, not only restricted to,
+This project consists of all latest modals and covers the usage of most of the materials components fields, not only restricted to,
 
-* Check Box
+* CheckBox
 * Date Picker
 * Form field
 * Input 
@@ -13,16 +13,15 @@ This project consists all latest modals and covers the usage of most of the mate
 * Side Nav
 * Tool Bar
 * Cards
-* Devider 
+* Divider 
 * And more
 
 ### Inbuilt Security
-This project mainly concentrated on Frond end security, demonstrating how to initilize cookies and use them to maintain standard datas during next logins and erase them all after the session is over for a perticular user.
+This project mainly concentrated on Frond end security, demonstrating how to initialize cookies and use them to maintain standard data during next logins and erase them all after the session is over for a particular user.
 
 ### Supported OS
-Advance Angular Web Application, is developed as platform independent and tested on  __Linux__, __Windows__, __MacOS__ operating system.
+Advance Angular Web Application, is developed as platform-independent and tested on __Linux__, __Windows__, __macOS__ operating system.
 
-RPP is developed for __Linux__ operating system.
 ### Prerequisites
 1. [Node.js](https://nodejs.org/en/)
 2. [npm package manager](https://docs.npmjs.com/)
@@ -30,8 +29,8 @@ RPP is developed for __Linux__ operating system.
 
 ### Project Development Configurations
 1. __Node.js__ - 12.9.0
-2. Development __Angular CLI__ - 7.2.3
-3. Buid __Angular CLI__ - 9.1.3
+2. Development on __Angular CLI__ - 7.2.3
+3. Build __Angular CLI__ - 9.1.3
 
 ### Instructions to setup the project
 
