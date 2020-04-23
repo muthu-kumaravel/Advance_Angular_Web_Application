@@ -14,6 +14,7 @@ This project consists of all latest modals and covers the usage of most of the m
 * Tool Bar
 * Cards
 * Divider 
+* Responsive Pages
 * And more
 
 ### Inbuilt Security
