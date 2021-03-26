@@ -41,6 +41,10 @@ The project can be built and executed in 3 simple steps. As follows,
 ```
 $ git clone https://github.com/muthu-kumaravel/Advance_Angular_Web_Application.git
 ```
+or (Cloning with node_modules)
+```
+$ git lfs clone https://github.com/muthu-kumaravel/Advance_Angular_Web_Application.git
+```
 2. Extract node_modules in the same folder
 
 (or)
